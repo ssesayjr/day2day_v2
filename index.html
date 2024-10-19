@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Screen Video Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with video background -->
+    <header class="header">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Transform Your Health</h1>
+            <p>Discover the best nutrition and health services</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
