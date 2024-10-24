@@ -3,28 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+#PricingOptions
+
 body{
   font-family: inherit;
   font-size: 14px;
-
 }
-section {position: inherit;}
+
 
 
 .secPrice{
-  background-image: url('../img/bg_v3.png'); 
-  z-index: 1;}
+  z-index: 1;
 
-.container {
+}
+
+.price_container {
   position: relative;
-  z-index: 1; 
-  padding-bottom: 5vw;}
+  display: flex;
+  z-index: 1000; 
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
+.box1, .box2 {
+  min-height: 320px; /* Equal height */
+  border: none;
+}
+
+.box1 {
+  background-color: none;
+}
+
+.box2 {
+  background-color: lightgreen;
+}
 .secPrice h2{
   float: top;
   text-align: center;
   line-height: .9;
-  font-family: 'XXIICoolScript-DEMO-Thin';
+  font-family: 'Quintessential', sans-serif;
   position: center;
   padding-top: 4vw;
   padding-bottom: 2vw;
@@ -46,6 +66,7 @@ section {position: inherit;}
         left: 0;
         right: 0;
         background: #434b62;
+
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #00a1fb, #434b62);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -76,6 +97,8 @@ section {position: inherit;}
  padding: 30px 0px;
  border-radius: 5px;
  position: relative;
+ max-width: 300px;
+ min-height: 400px;
 
 }
 .pricing-table .head {
@@ -90,7 +113,7 @@ section {position: inherit;}
 
 .pricing-table .head .title{
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -111,25 +134,38 @@ section {position: inherit;}
 
 }
 .pricing-table .content .price h1{
+  font-family: 'Quintessential', sans-serif;
   color:#fff;
-  font-size: 1.8vw;
   font-weight: 500;
-  padding-top: 25px;
-
+  padding-top: 5px;
 }
+
+.pricing-table .content .price h1,p{
+  padding: 0;
+  margin: 0;
+  top:-20px;
+}
+
 .pricing-table .content ul{
+ justify-content: center;
  list-style-type: none;
  margin-bottom: 20px;
- padding-top: 10px;
+ padding: 10px;
+ min-height: 400px;
+ height: 420px;
 }
 
 .pricing-table .content ul li{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  word-spacing: 0.20em;
   margin: 20px 0px;
   font-size: 14px;
   color:#ffffff;
 }
 
 .pricing-table .content .sign-up{
+  bottom: 0;
   background:linear-gradient(to right, #03f39a 0%, #03f39a 100%);
   border-radius: 40px;
   font-weight: 500;
@@ -148,7 +184,7 @@ font-weight: 600;
 -moz-transition: all 0.3 linear;
 transition: all 0.3 linear;
 border: none;
-font-size: 14px;
+font-size: 18px;
 text-transform: capitalize;
 position: relative;
 text-decoration: none;

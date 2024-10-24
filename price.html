@@ -10,7 +10,8 @@
  
     <!-- CSS References-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">    
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/price_style.css">    
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -45,7 +46,7 @@
             <source src="assets/homescreen.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="overlay">
+        <div>
             <nav class="nav-bar" style="top: 0px;">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -57,11 +58,100 @@
             </nav>
         <div class="hero-content">
                 <h1 class="display-2 mb-4">Pricing</h1> 
-               <!-- <a href="#services" class="btn-primary">Learn More</a>-->
         </div>
         </div>
     </header>
+ <!-- PRICE SECTION-->
+<section class="bg-white">
+
+</section>
     
+<!-- PRICE SECTION-->
+<section>
+    <div class="secPrice overlay bg-fixed" id="PricingOptions">
+        <div class="price_container">
+            <div class="title-wrap mb-5">
+            <div class="wrapper">
+                <div class="pricing-table gprice-single">
+                    <div class="head">
+                        <h4 class="title">DJ</h4> 
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1>
+                                <span style="font-size:calc(6px + 1.2vw)">$200</span>
+                                <p style="font-size:calc(4px + .5vw);">per hour</p>   
+                            </h1>
+                        </div>
+                        <div class="box1">
+
+                        <ul>
+                            <li>Get the party started with our DJ services! We ensure every moment is set to the right rhythm. Dance, celebrate and let us handle the soundtrack!</li>
+                            <li>~</li>
+                            <li>- 3 hour minimum -</li>
+                            <li>- Travel fee outside 50 mile radius -</li>   
+                            <li> </li>
+                        </ul>
+                        </div>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius">Request Now</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="pricing-table gprice-single">
+                        <div class="head">
+                            <h4 class="title">Photobooth</h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h1>
+                                    <span style="font-size:calc(6px + 1.2vw)">$250</span>
+                                    <p style="font-size:calc(4px + .5vw);">per hour</p>   
+
+                                </h1>
+                            </div>
+                            <div class="box1">
+                            <ul>
+                                <li>Capture the moment with our Photo Booth. From fun props to instant prints, we turn every event into a fun-filled photo experience. Snap memories, share smiles, and take home a keepsake!</li>
+                                <li>~</li>
+                                <li>- 3 hour minimum -</li>
+                                <li>- Travel fee outside 50 mile radius -</li>                      
+                            </ul>
+                        </div>
+                            <div class="sign-up">
+                                <a href="#" class="btn bordered radius">Request Now</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="pricing-table gprice-single">
+                            <div class="head">
+                                <h4 class="title">Both</h4>
+                            </div>
+                            <div class="content">
+                                <div class="price">
+                                    <h1>
+                                        <span style="font-size:calc(6px + 1.2vw)">$1500</span>
+                                        <p style="font-size:calc(4px + .5vw);">per hour</p>   
+                                    </h1>
+                                </div>
+                                <div class="box1">
+                                <ul>
+                                    <li>Options available for DJ and Photo Booth Services. Additional services are available upon request; such as graphic design, photography, and wedding officiant.</li>
+                                    <li>~</li>
+                                    <li>- 4 hour minimum ($100/hour after 4 hours) -</li>
+                                    <li>- Travel fee outside 50 mile radius -</li>  
+                                </ul>
+                                </div>
+                                <div class="sign-up">
+                                    <a href="#" class="btn bordered radius">Request Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><!--/ .container -->
+    </div>
+</section>
 
 <!-- Contact Form Section -->
 <section id="contact-form" class="bg-white">
@@ -76,6 +166,35 @@
                 <!-- Contact Form Holder -->
                 <div class="col-md-8 offset-md-2 contact-form-holder mt-4" data-aos="fade-up">
                     <form method="post" name="contact-us" action="">
+                        <div class="contactMenuContainer">
+                            <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label class="eventDate">Event Date</label>
+                                            <br>    
+                                            <input type="date" id="calendar" class="calendar-input" name="calendar"> 
+                                    </div>
+                                    
+                                    <div class="col-md-6 form-group">
+                                            <label for="ddmenu" class="eventDate">Event Type</label>
+                                            <br>
+
+                                                <select id="ddmenu" class="dropdown">
+                                                    <option value="default">-</option>
+                                                    <option value="marriage">Marriage </option>
+                                                    <option value="corporate_event">Corporate Event</option>
+                                                    <option value="birthday" >Birthday</option>
+                                                    <option value="graduation">Graduation</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row" style="padding-top: 20px;padding-bottom: 20px;padding-right:25px;padding-left: 25px">
+                            <div class="bottom_border"></div>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Name">
@@ -86,16 +205,16 @@
                             <div class="col-md-6 form-group">
                                 <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
                             </div>
+                            
                             <div class="col-md-12 form-group">
                                 <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
                             </div>
                             <div class="col-md-12 form-group">
                                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
                             </div>
-                            <div class="col-md-12 text-center" style="padding: 1vw;">
-                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" id ="submit" name="submit">Send Message</button>
                             </div>
-
                         </div>
                     </form>
                 </div>
@@ -108,15 +227,7 @@
     </div>
 </section>
 <!-- End of Contact Form Section -->		<!-- Features Section-->
-<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="row">
 
-            </div>
-        </div>
-    </div>
-</section>
 <!-- End of Features Section-->	
 <footer class="mastfoot my-3">
     <div class="inner container">
@@ -137,31 +248,22 @@
             <div class="col-lg-4 col-md-12 d-flex align-items-center">
               
             </div>
-            <div class="col-lg-4 col-md-12 d-flex align-items-center" style="position: relative; left: 15%; transform: translate(-15%);">
-              <nav class="nav nav-mastfoot justify-content-center">
-                  <a class="nav-link" href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a class="nav-link" href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a class="nav-link" href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
+            <div class="col-lg-4 col-md-12 d-flex align-items-center" style="justify-content: center;" >
+              <nav class="nav nav-mastfoot justify-content-center" >
+                <a class="nav-link" style="color: hsl(202, 100%, 49%, .7);"href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
                     <i class="fab fa-instagram"></i>
-                  </a>
+                </a>
               </nav>
             </div>
         </div>
         </div>
-        <div style="position: relative; padding-bottom: 2vw;">
+        <div style="position: relative; padding-bottom: 50px">
             <span style="max-width:50px; max-height: auto; position: absolute; left: 50%; transform: translate(-50%); padding-bottom: 5vw;">
                 <img src="assets/img/icons/d2d_logo_resized_v2.png">
-                </span>
+             </span>
         </div>
     </div>
   </footer>
-</div>
-	
-</div>
   
 	<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
@@ -179,6 +281,62 @@
 	<script src="js/app.min.js "></script>
 	<script src="//localhost:35729/livereload.js"></script>
 
+	<!-- On Page Load -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const calendar = document.getElementById('calendar');
 
+            calendar.addEventListener('change', () => {
+                const selectedDate = calendar.value;
+            });
+            });
+
+           // Function to mimic placeholder
+        function removePlaceholder() {
+            const cal = document.getElementById('calendar');
+            const nam = document.getElementById('name');
+            const mai = document.getElementById('email');
+            const pho = document.getElementById('phoneNumber');
+            const web = document.getElementById('websiteUrl');
+            const msg = document.getElementById('message');
+            const ety = document.getElementById('ddmenu');
+
+            cal.value = ''; // Clear the input
+            nam.value = ''; // Clear the input
+            mai.value = ''; // Clear the input
+            pho.value = ''; // Clear the input
+            web.value = ''; // Clear the input
+            msg.value = ''; // Clear the input
+            ety.value = ''; // Clear the input
+        }
+        function showPopup() {
+            alert('Thank you for contacting us! We will reply shortly.');
+            }
+
+            // Add event listener to the button
+        document.getElementById('submit').addEventListener('click',showPopup);
+        document.getElementById('submit').addEventListener('click',removePlaceholder);
+
+        // Function to remove the "placeholder" when the field is focused
+
+        
+
+        // Function to add the "placeholder" if the field is empty and loses focus
+        function addPlaceholder() {
+        if (dateInput.value === '') {
+            dateInput.classList.add('placeholder');
+            dateInput.value = 'yyyy-mm-dd';
+        }
+        }
+
+        // Initialize the placeholder
+        addPlaceholder();
+
+
+
+
+    </script>
+
+    
 </body>
 </html>
