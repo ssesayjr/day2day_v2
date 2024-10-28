@@ -858,7 +858,23 @@ background-color: #434b62; }
 .progress {
   height: 30px;
   font-size: 16px; } 
+  .hero-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 25%;
+  }
 
+  .hero-content h1 {
+    font-size: 16vw !important;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vw;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
 
   .navbar-img img {
     width: 50px;
@@ -907,7 +923,23 @@ background-color: #434b62; }
     height: 30px;
     font-size: 16px; } 
   
+    .hero-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-top: 25%;
+    }
   
+    .hero-content h1 {
+      font-size: 16vw !important;
+      justify-content: center;
+      text-align: center;
+      padding-top: 2vw;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+    }
     .navbar-img img {
       width: 50px;
     }
