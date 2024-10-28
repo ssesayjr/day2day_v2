@@ -573,22 +573,28 @@ header {
   overflow: hidden;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 25px;
   width: 200px;
   height: 200px;
 }
 
 #services .portfolio-item img {
   position: absolute;
+  display: flex;
   top: 50%;
   left: 50%;
   min-width: 25%;
   min-height: 25%;
-  max-width: 100%;
-  max-height: 100%;
+  width: 115%;
+  height: auto;
+  max-width: 200%;
+  max-height: 200%;
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   flex: 1 1 100%; /* Each item takes full width initially */
+  margin: 5px;
+  padding: 1vw;
 
 }
 
@@ -1044,6 +1050,10 @@ header {
 
   .hero-content h1 {
     font-size: 16vw !important;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vw;
+
   }
 
   .hero-content p {
@@ -1223,10 +1233,32 @@ header {
     text-align: center;
     justify-content: center;
   }
+  
+  #services .portfolio-item {
+    max-width: 75%;
+    height: auto;
+    }
 
   #services .portfolio-item img {
-   width: auto;
-   height: auto;
+    position: relative;
+    display: flex;
+    min-width: 75%;
+    min-height: auto;
+    margin: 0%;
+    padding: 0%;
+    top: 25%;
+    left: 50%;
+    transform: (-25%,-50%);
+  }
+
+  .portfolio-effect {
+    justify-content: center;
+    max-height:auto;
+    max-width: 95%;
+  }
+
+  #services .portfolio-item{
+    margin-bottom: 0px;
   }
   
 }
@@ -1253,6 +1285,9 @@ header {
 
   .hero-content h1 {
     font-size: 16vw !important;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vw;
   }
 
   .hero-content p {
@@ -1408,16 +1443,23 @@ header {
     top: 0;
   }
 
-  section #services .section .sectionBG{
-    flex: 1 1 100%; /* Each item takes full width initially */
-    margin: 5px;
-
+  .portfolio-effect {
+    justify-content: center;
+    max-height:auto;
+    max-width: 95%;
   }
 
-  section #services h2{
-    flex: 1 1 100%; /* Each item takes full width initially */
-    margin: 5px;
+  #services .portfolio-item{
+    margin-bottom: 0px;
+  }
 
+  .portfolio-item img {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+  }
+  #services .portfolio-item {
+    max-height: 250px;
   }
 }
 
