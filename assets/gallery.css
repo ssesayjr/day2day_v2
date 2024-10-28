@@ -175,7 +175,7 @@ header {
   transition: top 0.3s ease-in-out; /* Smooth transition */
   padding-top: 5px;
   padding-bottom: 1px;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 
@@ -852,6 +852,94 @@ background-color: #434b62; }
   width: 100%; }
 .progress {
   height: 30px;
-  font-size: 16px; } }
+  font-size: 16px; } 
 
+
+  .navbar-img img {
+    width: 50px;
+  }
+
+  .nav-bar {
+    top: -150px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+
+  }
+
+  .nav-bar ul li {
+    margin: 0;
+    padding: 10px;
+    gap: 0;
+  }
+
+  .nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+
+  .nav-bar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+  }
+
+  /* Make the top menu visible when scrolled */
+  .nav-bar.visible {
+    top: 0;
+  }
+}
+
+@media (max-width: 932px) {
+  .grid-item {
+    width: 100%; }
+  .progress {
+    height: 30px;
+    font-size: 16px; } 
+  
+  
+    .navbar-img img {
+      width: 50px;
+    }
+  
+    .nav-bar {
+      top: -150px;
+    }
+  
+    .nav-bar ul {
+      display: flex;
+      list-style: none;
+      padding: 5px;
+  
+    }
+  
+    .nav-bar ul li {
+      margin: 0;
+      padding: 10px;
+      gap: 0;
+    }
+  
+    .nav-bar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 0;
+      transition: background-color 0.3s;
+    }
+  
+    .nav-bar ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+    }
+  
+    /* Make the top menu visible when scrolled */
+    .nav-bar.visible {
+      top: 0;
+    }
+  }
 /*=====  End of RESPONSIVE  ======*/
