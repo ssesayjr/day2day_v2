@@ -130,6 +130,13 @@ header {
   font-style: normal;
 }
 
+.line:before {
+  content: "";
+  border-left: 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
 
 /*================================
 =            BG VIDEO            =
