@@ -316,7 +316,7 @@ header {
 /* Scrollable section styles */
 .serviceBG {
   padding: 20px;
-  background-image: url('../assets/img/bg_v3.png');
+  background-image: url('../assets/img/officiant_j1.jpeg');
   background-size: cover;
   color: #fff;
   z-index: 1;
@@ -749,6 +749,38 @@ header {
 }
 
 /*=================================
+=      Services Gallery            =
+=================================*/
+
+/* Container styling */
+.hover-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* The text to hover over */
+.hover-text {
+  cursor: pointer;
+}
+
+/* Hidden links */
+.hidden-links {
+  display: none; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Fade-in effect */
+  margin-top: 3px; /* Space between text and links */
+}
+
+/* Display and fade in links when text is hovered */
+.hover-container:hover .hidden-links {
+  display: block;
+  opacity: 1;
+  padding-bottom: 5px;
+}
+
+
+
+/*=================================
 =            PORTFOLIO            =
 =================================*/
 .filter-button-group {
@@ -832,6 +864,16 @@ header {
   padding-left: 5px;
   padding-right: 5px;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.noline:before {
+  content: "";
+  border-left: 0px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*==============================
